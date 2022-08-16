@@ -1,4 +1,3 @@
-from tkinter import N
 from pytube import YouTube
 from time import sleep
 import os
