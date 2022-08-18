@@ -21,15 +21,12 @@ def check_internet():
 def baixar_audio(link):
     ''' baixa o arquivo no formato de audio'''
     try:
-        
-
         audio_downloader = YoutubeDL({'format':'bestaudio'})
         audio_downloader.extract_info(link)
         
         print("\nDownload concluído!")
         sleep(2)
         
-    
     except: 
         os.system('cls') or None 
         print("\nLink inválido, verifique se colou o link corretamente...")
@@ -52,6 +49,7 @@ def baixar_video(link):
         youtube.streams.get_highest_resolution().download()
         print("\nDownload concluído!")
         sleep(2)
+        
     except: 
         os.system('cls') or None 
 
